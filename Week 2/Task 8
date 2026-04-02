@@ -1,1 +1,16 @@
+import java.io.*;
+import java.util.*;
 
+class UserMainCode
+{
+    public int totalHillWeight(int input1, int input2, int input3) {
+        int totalWeight = 0;
+
+        for (int i = 1; i <= input1; i++) {
+            int weightPerStar = input2 + (i - 1) * input3;
+            totalWeight += i * weightPerStar;
+        }
+
+        return totalWeight;
+    }
+}
