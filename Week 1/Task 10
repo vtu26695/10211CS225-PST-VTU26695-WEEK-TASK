@@ -1,1 +1,9 @@
-
+public class UserMainCode
+{
+    public string GetSecondWordInUpperCase(string input1)
+    {
+        string[] words = input1.Split(' ');
+        if (words.Length < 2) return "LESS";
+        return words[1].ToUpper();
+    }
+}
